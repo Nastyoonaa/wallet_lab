@@ -1,0 +1,120 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	objectVersion = 56;
+	objects = {
+		100000000000000000000001 = {
+			isa = PBXProject;
+			buildConfigurationList = 100000000000000000000011;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			knownRegions = (en, Base);
+			mainGroup = 100000000000000000000002;
+			productRefGroup = 100000000000000000000003;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (100000000000000000000004);
+		};
+		100000000000000000000002 = {
+			isa = PBXGroup;
+			children = (100000000000000000000005, 100000000000000000000006, 100000000000000000000017, 100000000000000000000003);
+			sourceTree = "<group>";
+		};
+		100000000000000000000003 = {
+			isa = PBXGroup;
+			children = (100000000000000000000007);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		100000000000000000000004 = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 100000000000000000000012;
+			buildPhases = (100000000000000000000009, 10000000000000000000000A);
+			buildRules = ();
+			dependencies = ();
+			name = WalletLab;
+			productName = WalletLab;
+			productReference = 100000000000000000000007;
+			productType = "com.apple.product-type.application";
+		};
+		100000000000000000000005 = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.swift;
+			path = WalletLabApp.swift;
+			sourceTree = "<group>";
+		};
+		100000000000000000000006 = {
+			isa = PBXFileReference;
+			lastKnownFileType = text.plist.xml;
+			path = Info.plist;
+			sourceTree = "<group>";
+		};
+		100000000000000000000007 = {
+			isa = PBXFileReference;
+			explicitFileType = wrapper.application;
+			path = WalletLab.app;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		100000000000000000000008 = {
+			isa = PBXBuildFile;
+			fileRef = 100000000000000000000005;
+		};
+		100000000000000000000009 = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = ();
+			name = "Build WalletShared";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -eu\ncd \"$SRCROOT/..\"\n./gradlew :shared:embedAndSignAppleFrameworkForXcode\n";
+		};
+		10000000000000000000000A = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (100000000000000000000008);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		100000000000000000000011 = {
+			isa = XCConfigurationList;
+			buildConfigurations = (100000000000000000000013, 100000000000000000000014);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		100000000000000000000012 = {
+			isa = XCConfigurationList;
+			buildConfigurations = (100000000000000000000015, 100000000000000000000016);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		100000000000000000000013 = {
+			isa = XCBuildConfiguration;
+			buildSettings = {};
+			name = Debug;
+		};
+		100000000000000000000014 = {
+			isa = XCBuildConfiguration;
+			buildSettings = {};
+			name = Release;
+		};
+		100000000000000000000015 = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 100000000000000000000017;
+			buildSettings = { SWIFT_OPTIMIZATION_LEVEL = "-Onone"; };
+			name = Debug;
+		};
+		100000000000000000000016 = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 100000000000000000000017;
+			buildSettings = { SWIFT_OPTIMIZATION_LEVEL = "-O"; };
+			name = Release;
+		};
+		100000000000000000000017 = {
+			isa = PBXFileReference;
+			lastKnownFileType = text.xcconfig;
+			path = WalletLab.xcconfig;
+			sourceTree = "<group>";
+		};
+	};
+	rootObject = 100000000000000000000001;
+}

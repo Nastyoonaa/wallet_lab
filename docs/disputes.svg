@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="360" viewBox="0 0 1080 360" role="img" aria-labelledby="title">
+<title id="title">Спорный перевод и возврат</title>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0L8 4L0 8Z" fill="#334155"/></marker></defs>
+<g font-family="system-ui, sans-serif" font-size="13" fill="#182538">
+<rect x="1" y="1" width="1078" height="109" fill="#f3f7fa" stroke="#a1afbe"/>
+<rect x="1" y="1" width="54" height="109" fill="#dbe7ef" stroke="#a1afbe"/>
+<text x="28" y="55.0" text-anchor="middle" transform="rotate(-90 28 55.0)" font-weight="600">Отправитель</text>
+<rect x="1" y="111" width="1078" height="144" fill="#f3f7fa" stroke="#a1afbe"/>
+<rect x="1" y="111" width="54" height="144" fill="#dbe7ef" stroke="#a1afbe"/>
+<text x="28" y="182.5" text-anchor="middle" transform="rotate(-90 28 182.5)" font-weight="600">Оператор</text>
+<rect x="1" y="256" width="1078" height="104" fill="#f3f7fa" stroke="#a1afbe"/>
+<rect x="1" y="256" width="54" height="104" fill="#dbe7ef" stroke="#a1afbe"/>
+<text x="28" y="307.5" text-anchor="middle" transform="rotate(-90 28 307.5)" font-weight="600">Wallet Lab</text>
+<polyline points="111,56 150,56" fill="none" stroke="#334155" stroke-width="1.5" marker-end="url(#arrow)"/>
+<polyline points="228,87 228,134" fill="none" stroke="#334155" stroke-width="1.5" marker-end="url(#arrow)"/>
+<polyline points="305,165 353,165" fill="none" stroke="#334155" stroke-width="1.5" marker-end="url(#arrow)"/>
+<polyline points="397,165 473,165" fill="none" stroke="#334155" stroke-width="1.5" marker-end="url(#arrow)"/>
+<text x="434" y="158" text-anchor="middle" >Нет</text>
+<polyline points="375,187 375,222 610,222 610,196" fill="none" stroke="#334155" stroke-width="1.5" marker-end="url(#arrow)"/>
+<text x="435" y="215" text-anchor="middle" >Да</text>
+<polyline points="663,196 663,274" fill="none" stroke="#334155" stroke-width="1.5" marker-end="url(#arrow)"/>
+<polyline points="641,296 555,296" fill="none" stroke="#334155" stroke-width="1.5" marker-end="url(#arrow)"/>
+<text x="598" y="289" text-anchor="middle" >Нет</text>
+<polyline points="480,265 480,241 731,241 731,196" fill="none" stroke="#334155" stroke-width="1.5" marker-end="url(#arrow)"/>
+<polyline points="685,296 782,296" fill="none" stroke="#334155" stroke-width="1.5" marker-end="url(#arrow)"/>
+<text x="722" y="289" text-anchor="middle" >Да</text>
+<polyline points="942,296 998,296" fill="none" stroke="#334155" stroke-width="1.5" marker-end="url(#arrow)"/>
+<circle cx="93.0" cy="56.0" r="17" fill="#fff" stroke="#334155" stroke-width="1.5"/>
+<rect x="150" y="25" width="155" height="62" rx="9" fill="#ffffff" stroke="#334155" stroke-width="1.5"/>
+<g transform="translate(160 35)" stroke="#334155" stroke-width="1.2" fill="none"><circle cx="6" cy="3" r="2.5"/><path d="M1 12v-1a5 5 0 0 1 10 0v1z"/></g>
+<text x="227.5" y="60.0" text-anchor="middle" >Подать обращение</text>
+<rect x="150" y="134" width="155" height="62" rx="9" fill="#ffffff" stroke="#334155" stroke-width="1.5"/>
+<g transform="translate(160 144)" stroke="#334155" stroke-width="1.2" fill="none"><circle cx="6" cy="3" r="2.5"/><path d="M1 12v-1a5 5 0 0 1 10 0v1z"/></g>
+<text x="227.5" y="160.5" text-anchor="middle" >Вынести решение</text>
+<text x="227.5" y="177.5" text-anchor="middle" >с причиной</text>
+<path d="M375.0 143L397 165.0L375.0 187L353 165.0Z" fill="#fff4d6" stroke="#334155"/>
+<text x="375.0" y="170.0" text-anchor="middle" font-size="22">×</text>
+<text x="375.0" y="203" text-anchor="middle" >Одобрено?</text>
+<circle cx="491.0" cy="165.0" r="17" fill="#fff" stroke="#334155" stroke-width="3"/>
+<text x="491.0" y="199" text-anchor="middle" >Отклонено</text>
+<rect x="585" y="134" width="155" height="62" rx="9" fill="#ffffff" stroke="#334155" stroke-width="1.5"/>
+<g transform="translate(595 144)" stroke="#334155" stroke-width="1.2" fill="none"><circle cx="6" cy="3" r="2.5"/><path d="M1 12v-1a5 5 0 0 1 10 0v1z"/></g>
+<text x="662.5" y="160.5" text-anchor="middle" >Запустить выплату</text>
+<text x="662.5" y="177.5" text-anchor="middle" >или повторить</text>
+<path d="M663.0 274L685 296.0L663.0 318L641 296.0Z" fill="#fff4d6" stroke="#334155"/>
+<text x="663.0" y="301.0" text-anchor="middle" font-size="22">×</text>
+<text x="663.0" y="334" text-anchor="middle" >Средств достаточно?</text>
+<rect x="405" y="265" width="150" height="62" rx="9" fill="#dff3e8" stroke="#334155" stroke-width="1.5"/>
+<g transform="translate(421 281)" stroke="#334155" stroke-width="1.2" fill="none"><circle r="4.5"/><circle r="2"/><path d="M-6 0H-4.5M4.5 0H6M0 -6V-4.5M0 4.5V6M-4.2 -4.2l1.1 1.1m6.2 6.2 1.1 1.1m0-8.4-1.1 1.1m-6.2 6.2-1.1 1.1"/></g>
+<text x="480.0" y="291.5" text-anchor="middle" >Сохранить</text>
+<text x="480.0" y="308.5" text-anchor="middle" >ожидание средств</text>
+<rect x="782" y="265" width="160" height="62" rx="9" fill="#dff3e8" stroke="#334155" stroke-width="1.5"/>
+<g transform="translate(798 281)" stroke="#334155" stroke-width="1.2" fill="none"><circle r="4.5"/><circle r="2"/><path d="M-6 0H-4.5M4.5 0H6M0 -6V-4.5M0 4.5V6M-4.2 -4.2l1.1 1.1m6.2 6.2 1.1 1.1m0-8.4-1.1 1.1m-6.2 6.2-1.1 1.1"/></g>
+<text x="862.0" y="291.5" text-anchor="middle" >Провести</text>
+<text x="862.0" y="308.5" text-anchor="middle" >обратный перевод</text>
+<circle cx="1016.0" cy="296.0" r="17" fill="#fff" stroke="#334155" stroke-width="3"/>
+<text x="1016.0" y="330" text-anchor="middle" >Исполнено</text>
+</g>
+</svg>

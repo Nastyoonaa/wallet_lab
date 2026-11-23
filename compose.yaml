@@ -1,0 +1,29 @@
+services:
+  db:
+    image: postgres:17
+    environment:
+      POSTGRES_USER: wallet
+      POSTGRES_PASSWORD: wallet
+      POSTGRES_DB: wallet
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U wallet -d wallet"]
+      interval: 2s
+      timeout: 3s
+      retries: 20
+
+  api:
+    build: ./backend
+    depends_on:
+      db:
+        condition: service_healthy
+    environment:
+      DATABASE_URL: postgresql://wallet:wallet@db:5432/wallet
+      WALLET_LAB_DEMO: "${WALLET_LAB_DEMO:-0}"
+    ports:
+      - "127.0.0.1:8000:8000"
+    command: ["sh", "-ec", "python -m wallet_lab.migrate && exec uvicorn wallet_lab.api:app --host 0.0.0.0 --port 8000"]
+
+volumes:
+  pgdata:
